@@ -17,14 +17,8 @@ class SymbolRollerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // TO-DO :
-        // - 심볼에서, 하나를 임의로 추출해서,
-        // - 이미지와 텍스트를 설정한다
-        // DRY
-        // Do not Repeat Yourself : 중복된 코드를 보면 참지 말아라
-        
         reload()
+        button.tintColor = UIColor.systemPink
     }
     
     override func viewWillAppear(_ animated: Bool) {
