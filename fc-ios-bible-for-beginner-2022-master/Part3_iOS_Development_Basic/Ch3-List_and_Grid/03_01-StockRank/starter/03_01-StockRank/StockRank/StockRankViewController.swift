@@ -18,8 +18,6 @@ class StockRankViewController: UIViewController {
     // Presentation - 셀을 어떻게 표현?
     // Layout - 셀을 어떻게 배치?
     
-    // protocol -
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
