@@ -18,8 +18,8 @@
 		948CD20C2812AD5F003DC0C4 /* AppleFrameworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948CD20B2812AD5F003DC0C4 /* AppleFrameworkUITests.swift */; };
 		948CD20E2812AD5F003DC0C4 /* AppleFrameworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948CD20D2812AD5F003DC0C4 /* AppleFrameworkUITestsLaunchTests.swift */; };
 		948CD21B2812ADBA003DC0C4 /* FramewokData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948CD21A2812ADBA003DC0C4 /* FramewokData.swift */; };
-		94DA3CA0281EC5000054FFC7 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94DA3C9F281EC5000054FFC7 /* Detail.storyboard */; };
-		94DA3CA2281EC5190054FFC7 /* FrameworkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA3CA1281EC5190054FFC7 /* FrameworkDetailViewController.swift */; };
+		FF605A16287ED7D600E450A1 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF605A15287ED7D600E450A1 /* Detail.storyboard */; };
+		FF605A18287ED7EE00E450A1 /* FrameworkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF605A17287ED7EE00E450A1 /* FrameworkDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +55,8 @@
 		948CD20B2812AD5F003DC0C4 /* AppleFrameworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkUITests.swift; sourceTree = "<group>"; };
 		948CD20D2812AD5F003DC0C4 /* AppleFrameworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFrameworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		948CD21A2812ADBA003DC0C4 /* FramewokData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramewokData.swift; sourceTree = "<group>"; };
-		94DA3C9F281EC5000054FFC7 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
-		94DA3CA1281EC5190054FFC7 /* FrameworkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewController.swift; sourceTree = "<group>"; };
+		FF605A15287ED7D600E450A1 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		FF605A17287ED7EE00E450A1 /* FrameworkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +112,9 @@
 				948CD21A2812ADBA003DC0C4 /* FramewokData.swift */,
 				9487E77E2815676900A635EF /* FrameworkListViewController.swift */,
 				9487E7802815698C00A635EF /* FrameworkCell.swift */,
-				94DA3CA1281EC5190054FFC7 /* FrameworkDetailViewController.swift */,
 				948CD1F02812AD5E003DC0C4 /* Main.storyboard */,
-				94DA3C9F281EC5000054FFC7 /* Detail.storyboard */,
+				FF605A15287ED7D600E450A1 /* Detail.storyboard */,
+				FF605A17287ED7EE00E450A1 /* FrameworkDetailViewController.swift */,
 				948CD1F32812AD5F003DC0C4 /* Assets.xcassets */,
 				948CD1F52812AD5F003DC0C4 /* LaunchScreen.storyboard */,
 				948CD1F82812AD5F003DC0C4 /* Info.plist */,
@@ -246,7 +246,7 @@
 				948CD1F72812AD5F003DC0C4 /* LaunchScreen.storyboard in Resources */,
 				948CD1F42812AD5F003DC0C4 /* Assets.xcassets in Resources */,
 				948CD1F22812AD5E003DC0C4 /* Main.storyboard in Resources */,
-				94DA3CA0281EC5000054FFC7 /* Detail.storyboard in Resources */,
+				FF605A16287ED7D600E450A1 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +275,7 @@
 				948CD1ED2812AD5E003DC0C4 /* SceneDelegate.swift in Sources */,
 				948CD21B2812ADBA003DC0C4 /* FramewokData.swift in Sources */,
 				9487E7812815698C00A635EF /* FrameworkCell.swift in Sources */,
-				94DA3CA2281EC5190054FFC7 /* FrameworkDetailViewController.swift in Sources */,
+				FF605A18287ED7EE00E450A1 /* FrameworkDetailViewController.swift in Sources */,
 				9487E77F2815676900A635EF /* FrameworkListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -436,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
