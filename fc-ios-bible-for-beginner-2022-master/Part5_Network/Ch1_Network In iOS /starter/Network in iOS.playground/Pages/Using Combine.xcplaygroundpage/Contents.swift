@@ -36,14 +36,14 @@ final class NetworkService {
         let url = URL(string: "https://api.github.com/users/\(userName)")!
         let publisher = session
             .dataTaskPublisher(for: url)
-            // 서버에서 받은 response 확인
+            // 서버에서 받은 response 확인 및 Data 확인
             .tryMap { result -> Data in
                 guard let httpResponse = result.response as? HTTPURLResponse,
                       (200..<300).contains(httpResponse.statusCode) else {
-                    let response = result.response as? HTTPURLResponse
-                    let statusCode = response?.statusCode ?? -1
-                    throw NetworkError.responseError(statusCode: statusCode)
-                }
+                          let response = result.response as? HTTPURLResponse
+                          let statusCode = response?.statusCode ?? -1
+                          throw NetworkError.responseError(statusCode: statusCode)
+                      }
                 return result.data
             }
             .decode(type: GithubProfile.self, decoder: JSONDecoder())
@@ -54,7 +54,7 @@ final class NetworkService {
 
 let networkService = NetworkService(configuration: .default)
 
-let subscription = networkService
+let subcription = networkService
     .fetchProfile(userName: "cafielo")
     .receive(on: RunLoop.main)
     .sink { completion in
@@ -62,7 +62,6 @@ let subscription = networkService
     } receiveValue: { profile in
         print("profile: \(profile)")
     }
-
 
 
 
