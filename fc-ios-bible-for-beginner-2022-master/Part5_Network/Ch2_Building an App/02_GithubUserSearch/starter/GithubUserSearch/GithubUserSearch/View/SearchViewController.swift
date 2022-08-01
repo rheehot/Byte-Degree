@@ -10,6 +10,8 @@ import Combine
 
 class SearchViewController: UIViewController {
     
+    let network = NetworkService(configuration: .default)
+    
     @Published private(set) var users: [SearchResult] = []
     var subcriptions = Set<AnyCancellable>()
     
@@ -84,25 +86,14 @@ extension SearchViewController: UISearchBarDelegate {
         print("button clicked: \(searchBar.text)")
         
         guard let keyword = searchBar.text, !keyword.isEmpty else { return }
-        let base = "https://api.github.com/"
-        let path = "search/users"
-        let params: [String: String] = ["q": keyword]
-        let header: [String: String] = ["Content-Type": "application/json"]
+        let resource = Resource<SearchUserResponse>(
+            base: "https://api.github.com/",
+            path: "search/users",
+            params: ["q": keyword],
+            header: ["Content-Type": "application/json"]
+        )
         
-        var urlComponents = URLComponents(string: base + path)!
-        let queryItems = params.map { (key: String, value: String) in
-            return URLQueryItem(name: key, value: value)
-        }
-        urlComponents.queryItems = queryItems
-        
-        var request = URLRequest(url: urlComponents.url!)
-        header.forEach { (key: String, value: String) in
-            request.addValue(value, forHTTPHeaderField: key)
-        }
-        
-        URLSession.shared.dataTaskPublisher(for: request)
-            .map { $0.data }
-            .decode(type: SearchUserResponse.self, decoder: JSONDecoder())
+        network.load(resource)
             .map { $0.items }
             .replaceError(with: [])
             .receive(on: RunLoop.main)
