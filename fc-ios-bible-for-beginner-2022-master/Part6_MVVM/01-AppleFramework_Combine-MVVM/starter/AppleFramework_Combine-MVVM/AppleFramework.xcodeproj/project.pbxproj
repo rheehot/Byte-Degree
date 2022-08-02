@@ -20,6 +20,8 @@
 		948CD21B2812ADBA003DC0C4 /* FramewokData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948CD21A2812ADBA003DC0C4 /* FramewokData.swift */; };
 		94A77A74281EAFAA00CFE6A7 /* FrameworkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A77A73281EAFAA00CFE6A7 /* FrameworkDetailViewController.swift */; };
 		94A77A76281EAFBE00CFE6A7 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A77A75281EAFBE00CFE6A7 /* Detail.storyboard */; };
+		FFBC4192289921E800FD0E01 /* FrameworkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC4191289921E800FD0E01 /* FrameworkListViewModel.swift */; };
+		FFBC4194289921F400FD0E01 /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC4193289921F400FD0E01 /* FrameworkDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		948CD21A2812ADBA003DC0C4 /* FramewokData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramewokData.swift; sourceTree = "<group>"; };
 		94A77A73281EAFAA00CFE6A7 /* FrameworkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewController.swift; sourceTree = "<group>"; };
 		94A77A75281EAFBE00CFE6A7 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		FFBC4191289921E800FD0E01 /* FrameworkListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewModel.swift; sourceTree = "<group>"; };
+		FFBC4193289921F400FD0E01 /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +113,9 @@
 			children = (
 				948CD1EA2812AD5E003DC0C4 /* AppDelegate.swift */,
 				948CD1EC2812AD5E003DC0C4 /* SceneDelegate.swift */,
-				948CD21A2812ADBA003DC0C4 /* FramewokData.swift */,
-				9487E77E2815676900A635EF /* FrameworkListViewController.swift */,
-				9487E7802815698C00A635EF /* FrameworkCell.swift */,
-				94A77A73281EAFAA00CFE6A7 /* FrameworkDetailViewController.swift */,
-				948CD1F02812AD5E003DC0C4 /* Main.storyboard */,
-				94A77A75281EAFBE00CFE6A7 /* Detail.storyboard */,
+				FFBC41952899297E00FD0E01 /* ViewModel */,
+				FFBC418F289921A800FD0E01 /* Model */,
+				FFBC4190289921BC00FD0E01 /* View */,
 				948CD1F32812AD5F003DC0C4 /* Assets.xcassets */,
 				948CD1F52812AD5F003DC0C4 /* LaunchScreen.storyboard */,
 				948CD1F82812AD5F003DC0C4 /* Info.plist */,
@@ -137,6 +138,35 @@
 				948CD20D2812AD5F003DC0C4 /* AppleFrameworkUITestsLaunchTests.swift */,
 			);
 			path = AppleFrameworkUITests;
+			sourceTree = "<group>";
+		};
+		FFBC418F289921A800FD0E01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				948CD21A2812ADBA003DC0C4 /* FramewokData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFBC4190289921BC00FD0E01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9487E77E2815676900A635EF /* FrameworkListViewController.swift */,
+				9487E7802815698C00A635EF /* FrameworkCell.swift */,
+				94A77A73281EAFAA00CFE6A7 /* FrameworkDetailViewController.swift */,
+				948CD1F02812AD5E003DC0C4 /* Main.storyboard */,
+				94A77A75281EAFBE00CFE6A7 /* Detail.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFBC41952899297E00FD0E01 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FFBC4191289921E800FD0E01 /* FrameworkListViewModel.swift */,
+				FFBC4193289921F400FD0E01 /* FrameworkDetailViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +303,11 @@
 			files = (
 				948CD1EB2812AD5E003DC0C4 /* AppDelegate.swift in Sources */,
 				948CD1ED2812AD5E003DC0C4 /* SceneDelegate.swift in Sources */,
+				FFBC4192289921E800FD0E01 /* FrameworkListViewModel.swift in Sources */,
 				948CD21B2812ADBA003DC0C4 /* FramewokData.swift in Sources */,
 				9487E7812815698C00A635EF /* FrameworkCell.swift in Sources */,
 				94A77A74281EAFAA00CFE6A7 /* FrameworkDetailViewController.swift in Sources */,
+				FFBC4194289921F400FD0E01 /* FrameworkDetailViewModel.swift in Sources */,
 				9487E77F2815676900A635EF /* FrameworkListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -436,7 +468,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
