@@ -2,7 +2,7 @@
 //  TextView.swift
 //  SwiftUI-Basic
 //
-//  Created by joonwon lee on 2022/05/21.
+//  Created by TAEJANIM on 2022/08/02.
 //
 
 import SwiftUI
@@ -10,7 +10,6 @@ import SwiftUI
 struct TextView: View {
     var body: some View {
         Text("SwiftUI")
-            .font(.system(size: 40, weight: .bold, design: .default))
     }
 }
 

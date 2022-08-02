@@ -2,7 +2,7 @@
 //  ButtonView.swift
 //  SwiftUI-Basic
 //
-//  Created by joonwon lee on 2022/05/21.
+//  Created by TAEJANIM on 2022/08/02.
 //
 
 import SwiftUI
@@ -10,16 +10,11 @@ import SwiftUI
 struct ButtonView: View {
     var body: some View {
         Button {
-            print("button tapped")
+            print("Button tapped")
         } label: {
             Text("Click Me")
-                .font(.system(size: 20, weight: .bold, design: .default))
-                .foregroundColor(.white)
         }
-        .padding()
-        .frame(height: 100)
-        .background(.pink)
-        .cornerRadius(20)
+
     }
 }
 

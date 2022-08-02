@@ -2,7 +2,7 @@
 //  ImageView.swift
 //  SwiftUI-Basic
 //
-//  Created by joonwon lee on 2022/05/21.
+//  Created by TAEJANIM on 2022/08/02.
 //
 
 import SwiftUI
@@ -10,9 +10,6 @@ import SwiftUI
 struct ImageView: View {
     var body: some View {
         Image(systemName: "sun.max.fill")
-            .renderingMode(.original)
-            .resizable()
-            .aspectRatio(contentMode: .fit)
     }
 }
 

@@ -9,9 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-//        ImageView()
-//        ButtonView()
-        TextView()
+        VStack {
+            ImageView()
+            ButtonView()
+            TextView()
+            
+            Spacer()
+            
+            HStack {
+                ImageView()
+                ButtonView()
+                TextView()
+            }
+            
+            Spacer()
+            
+            ZStack {
+                ImageView()
+                ButtonView()
+                TextView()
+            }
+        }
     }
 }
 
