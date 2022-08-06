@@ -16,6 +16,7 @@
 		9486F0C328386AC20069AEB0 /* StockRank_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F0C228386AC20069AEB0 /* StockRank_SwiftUIUITests.swift */; };
 		9486F0C528386AC20069AEB0 /* StockRank_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F0C428386AC20069AEB0 /* StockRank_SwiftUIUITestsLaunchTests.swift */; };
 		9486F0D228386AE60069AEB0 /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F0D128386AE60069AEB0 /* StockModel.swift */; };
+		FFBCE15D289E5C1500728527 /* StockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBCE15C289E5C1500728527 /* StockDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		9486F0C228386AC20069AEB0 /* StockRank_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRank_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		9486F0C428386AC20069AEB0 /* StockRank_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRank_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9486F0D128386AE60069AEB0 /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
+		FFBCE15C289E5C1500728527 /* StockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		9486F09B28386AC10069AEB0 = {
 			isa = PBXGroup;
 			children = (
+				FFBCE15C289E5C1500728527 /* StockDetailView.swift */,
 				9486F0A628386AC10069AEB0 /* StockRank-SwiftUI */,
 				9486F0B728386AC20069AEB0 /* StockRank-SwiftUITests */,
 				9486F0C128386AC20069AEB0 /* StockRank-SwiftUIUITests */,
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9486F0AA28386AC10069AEB0 /* StockRankView.swift in Sources */,
+				FFBCE15D289E5C1500728527 /* StockDetailView.swift in Sources */,
 				943FC92C2847038200CF742D /* StockRankRow.swift in Sources */,
 				9486F0A828386AC10069AEB0 /* StockRank_SwiftUIApp.swift in Sources */,
 				9486F0D228386AE60069AEB0 /* StockModel.swift in Sources */,
