@@ -17,6 +17,9 @@
 		9486F0FD283883B40069AEB0 /* AppleFramework_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F0FC283883B40069AEB0 /* AppleFramework_SwiftUIUITests.swift */; };
 		9486F0FF283883B40069AEB0 /* AppleFramework_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F0FE283883B40069AEB0 /* AppleFramework_SwiftUIUITestsLaunchTests.swift */; };
 		9486F10C283883D60069AEB0 /* FramewokData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9486F10B283883D60069AEB0 /* FramewokData.swift */; };
+		FFA81B4328A14F5800AA711B /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA81B4228A14F5800AA711B /* FrameworkDetailView.swift */; };
+		FFA81B4528A1505200AA711B /* FrameworkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA81B4428A1505200AA711B /* FrameworkListViewModel.swift */; };
+		FFA81B4728A1578700AA711B /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA81B4628A1578700AA711B /* FrameworkDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		9486F0FC283883B40069AEB0 /* AppleFramework_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFramework_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		9486F0FE283883B40069AEB0 /* AppleFramework_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleFramework_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9486F10B283883D60069AEB0 /* FramewokData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramewokData.swift; sourceTree = "<group>"; };
+		FFA81B4228A14F5800AA711B /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
+		FFA81B4428A1505200AA711B /* FrameworkListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewModel.swift; sourceTree = "<group>"; };
+		FFA81B4628A1578700AA711B /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 			children = (
 				9486F0E1283883B30069AEB0 /* AppleFramework_SwiftUIApp.swift */,
 				9486F0E3283883B30069AEB0 /* FrameworkListView.swift */,
+				FFA81B4428A1505200AA711B /* FrameworkListViewModel.swift */,
+				FFA81B4228A14F5800AA711B /* FrameworkDetailView.swift */,
+				FFA81B4628A1578700AA711B /* FrameworkDetailViewModel.swift */,
 				943FC92D2847177700CF742D /* FrameworkCell.swift */,
 				9486F10B283883D60069AEB0 /* FramewokData.swift */,
 				94768D4A2858DEB300F507E4 /* SafariView.swift */,
@@ -268,8 +277,11 @@
 			files = (
 				943FC92E2847177700CF742D /* FrameworkCell.swift in Sources */,
 				9486F0E4283883B30069AEB0 /* FrameworkListView.swift in Sources */,
+				FFA81B4528A1505200AA711B /* FrameworkListViewModel.swift in Sources */,
+				FFA81B4328A14F5800AA711B /* FrameworkDetailView.swift in Sources */,
 				9486F10C283883D60069AEB0 /* FramewokData.swift in Sources */,
 				9486F0E2283883B30069AEB0 /* AppleFramework_SwiftUIApp.swift in Sources */,
+				FFA81B4728A1578700AA711B /* FrameworkDetailViewModel.swift in Sources */,
 				94768D4B2858DEB300F507E4 /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
