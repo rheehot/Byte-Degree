@@ -132,12 +132,22 @@
                                                         </view>
                                                     </subviews>
                                                 </stackView>
+                                                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pr-TK-ik3">
+                                                    <rect key="frame" x="0.0" y="119" width="413" height="1"/>
+                                                    <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="3ro-eC-RQM"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="ujd-5u-wxp" secondAttribute="trailing" id="5Jg-Tn-WAT"/>
+                                                <constraint firstAttribute="trailing" secondItem="1pr-TK-ik3" secondAttribute="trailing" id="LfY-8H-BZc"/>
                                                 <constraint firstItem="ujd-5u-wxp" firstAttribute="top" secondItem="mso-3P-daI" secondAttribute="top" id="OZO-mf-0k2"/>
                                                 <constraint firstAttribute="bottom" secondItem="ujd-5u-wxp" secondAttribute="bottom" id="VUX-iO-3XS"/>
                                                 <constraint firstItem="ujd-5u-wxp" firstAttribute="leading" secondItem="mso-3P-daI" secondAttribute="leading" id="ac3-xM-3gA"/>
+                                                <constraint firstAttribute="bottom" secondItem="1pr-TK-ik3" secondAttribute="bottom" id="tZS-ZC-Fyl"/>
+                                                <constraint firstItem="1pr-TK-ik3" firstAttribute="leading" secondItem="mso-3P-daI" secondAttribute="leading" id="yId-zB-q8N"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="413" height="120"/>
